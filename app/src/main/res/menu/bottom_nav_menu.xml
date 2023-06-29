@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_my_alarms"
+        android:icon="@drawable/notifications_48px"
+        android:title="@string/title_my_alarms" />
+
+    <item
+        android:id="@+id/navigation_plus_menu"
+        android:title=""/>
+
+    <item
+        android:id="@+id/navigation_friend_alarms"
+        android:icon="@drawable/hearing_48px"
+        android:title="@string/title_friends_alarms" />
+
+</menu>

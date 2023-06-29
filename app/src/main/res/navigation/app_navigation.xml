@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@+id/navigation_my_alarms">
+
+    <fragment
+        android:id="@+id/navigation_my_alarms"
+        android:name="com.deviz.alarmcareproject.ui.fragment.MyAlarmsFragment"
+        android:label="@string/title_my_alarms"
+        tools:layout="@layout/fragment_my_alarms" />
+
+    <fragment
+        android:id="@+id/navigation_friend_alarms"
+        android:name="com.deviz.alarmcareproject.ui.fragment.FriendAlarmsFragment"
+        android:label="@string/title_friends_alarms"
+        tools:layout="@layout/fragment_friend_alarms" />
+
+</navigation>

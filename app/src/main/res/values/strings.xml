@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AlarmCareProject</string>
+    <string name="title_my_alarms">내알람</string>
+    <string name="title_friends_alarms">환자알람</string>
+    <string name="title_plus_menu">추가기능</string>
+    <string name="my_alarms_title">내알람</string>
+    <string name="friend_alarms_title">친구알람</string>
 </resources>
