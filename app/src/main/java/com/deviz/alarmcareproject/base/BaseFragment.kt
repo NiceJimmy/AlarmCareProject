@@ -12,7 +12,7 @@ import timber.log.Timber
 abstract class BaseFragment<T : ViewDataBinding> : Fragment() {
 
     private val TAG = "BaseFragment"
-    lateinit var binding: T
+    lateinit var viewDataBinding: T
 
     abstract val layoutResourceId: Int
 
@@ -23,9 +23,9 @@ abstract class BaseFragment<T : ViewDataBinding> : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         Timber.d("${javaClass.simpleName}: onCreateView")
-        binding = DataBindingUtil.inflate(inflater, layoutResourceId, container, false)
-        binding.lifecycleOwner = viewLifecycleOwner
-        return binding.root
+        viewDataBinding = DataBindingUtil.inflate(inflater, layoutResourceId, container, false)
+        viewDataBinding.lifecycleOwner = viewLifecycleOwner
+        return viewDataBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

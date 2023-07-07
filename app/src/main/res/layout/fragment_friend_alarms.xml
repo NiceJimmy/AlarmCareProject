@@ -22,5 +22,13 @@
             app:layout_constraintTop_toTopOf="parent"
             app:text="@{@string/friend_alarms_title}" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/friend_alarm_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
